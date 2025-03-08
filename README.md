@@ -1,103 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitch Username Availability Checker</title>
-</head>
-<body>
-    <h1>Twitch Username Availability Checker 🎮🔍</h1>
-    <p>Welcome to the <strong>Twitch Username Availability Checker</strong>! 🎉 This bot helps you check if a Twitch username is available or already taken. Using the Twitch API, you can easily verify if your desired username is free to register. 💻</p>
+Twitch Username Availability Checker 🎮🔍
 
-    <h2>✨ Features</h2>
-    <ul>
-        <li>Check if a Twitch username is available or not. ✅❌</li>
-        <li>Supports both <strong>Slash Commands</strong> and <strong>Prefix Commands</strong> on Discord. 🤖</li>
-        <li>Built with Python and the <strong>discord.py</strong> library. 📚</li>
-    </ul>
+Welcome to the Twitch Username Availability Checker! 🎉 This bot helps you check if a Twitch username is available or already taken. Using the Twitch API, you can easily verify if your desired username is free to register. 💻
+✨ Features
 
-    <h2>📦 Installation</h2>
-    <ol>
-        <li><strong>Clone the repository</strong> to your local machine:
-            <pre><code>git clone https://github.com/yourusername/twitch-username-checker.git</code></pre>
-        </li>
-        <li><strong>Navigate to the project folder</strong>:
-            <pre><code>cd twitch-username-checker</code></pre>
-        </li>
-        <li><strong>Create and activate a virtual environment</strong> (optional but recommended):
-            <ul>
-                <li>For Windows:
-                    <pre><code>python -m venv venv</code></pre>
-                    <pre><code>venv\Scripts\activate</code></pre>
-                </li>
-                <li>For Mac/Linux:
-                    <pre><code>python3 -m venv venv</code></pre>
-                    <pre><code>source venv/bin/activate</code></pre>
-                </li>
-            </ul>
-        </li>
-        <li><strong>Install the required dependencies</strong>:
-            <pre><code>pip install -r requirements.txt</code></pre>
-        </li>
-    </ol>
+    Check if a Twitch username is available or not. ✅❌
+    Supports both Slash Commands and Prefix Commands on Discord. 🤖
+    Built with Python and the discord.py library. 📚
 
-    <h2>🔑 .env File</h2>
-    <p>The <strong>.env</strong> file has already been created in the repository with the following keys:</p>
-    <pre><code>
-DISCORD_BOT_TOKEN=
-TWITCH_CLIENT_ID=
-TWITCH_APP_ACCESS_TOKEN=
-    </code></pre>
-    <p>Simply <strong>fill in the empty fields</strong> with your own secret values.</p>
-    <p><strong>DO NOT commit</strong> your actual secrets to the repository. 🔐</p>
-    <p>Make sure the <strong>.env</strong> file is kept private to protect your credentials. 🚫</p>
+📦 Installation
 
-    <h2>⚙️ Setup and Configuration</h2>
-    <ol>
-        <li><strong>Create a Twitch Developer Account</strong> and get your <strong>Client ID</strong> and <strong>Access Token</strong>:
-            <ul>
-                <li>You can get your credentials from the <a href="https://dev.twitch.tv/console/apps" target="_blank">Twitch Developer Console</a>.</li>
-            </ul>
-        </li>
-        <li><strong>Fill in the .env file</strong> with the following keys:
-            <ul>
-                <li><strong>DISCORD_BOT_TOKEN</strong>: Your Discord bot token.</li>
-                <li><strong>TWITCH_CLIENT_ID</strong>: Your Twitch client ID.</li>
-                <li><strong>TWITCH_APP_ACCESS_TOKEN</strong>: Your Twitch app access token.</li>
-            </ul>
-        </li>
-    </ol>
+    Clone the repository to your local machine:
 
-    <h2>🚀 Usage</h2>
-    <p>Once the bot is set up and running, you can use it on Discord with the following commands:</p>
-    <h3>Slash Command</h3>
-    <pre><code>/tw username</code></pre>
-    <p>Check if the username is available on Twitch.</p>
+git clone https://github.com/yourusername/twitch-username-checker.git
 
-    <h3>Prefix Command</h3>
-    <pre><code>!tw username</code></pre>
-    <p>Check if the username is available on Twitch.</p>
+Navigate to the project folder:
 
-    <p>Both commands will return the availability of the username: ✅ if it's available, ❌ if it's already taken.</p>
+cd twitch-username-checker
 
-    <h2>🛠️ Dependencies</h2>
-    <ul>
-        <li><strong>discord.py</strong>: To interact with Discord's API.</li>
-        <li><strong>requests</strong>: To make HTTP requests to the Twitch API.</li>
-        <li><strong>python-dotenv</strong>: To manage environment variables.</li>
-    </ul>
-    <p>Install them by running:
-        <pre><code>pip install discord.py requests python-dotenv</code></pre>
-    </p>
+Create and activate a virtual environment (optional but recommended):
 
-    <h2>🎉 Contributing</h2>
-    <p>Feel free to open an issue or submit a pull request if you want to contribute! 🙌</p>
-    <p>Please make sure to follow the repository's guidelines when submitting changes. 📜</p>
+    For Windows:
 
-    <h2>📜 License</h2>
-    <p>This project is licensed under the MIT License - see the <a href="LICENSE" target="_blank">LICENSE</a> file for details.</p>
+python -m venv venv
+venv\Scripts\activate
 
-    <h2>💬 Support</h2>
-    <p>If you have any questions or need support, feel free to open an issue in this repository. 😄</p>
-</body>
-</html>
+For Mac/Linux:
+
+    python3 -m venv venv
+    source venv/bin/activate
+
+Install the required dependencies:
+
+    pip install -r requirements.txt
+
+🔑 .env File
+
+The .env file should contain your Discord Bot Token and Twitch API credentials. To set this up:
+
+    Create a file named .env in the project root.
+    Add the following keys to your .env file (replace the placeholders with your actual values):
+
+    DISCORD_BOT_TOKEN=your_discord_bot_token_here
+    TWITCH_CLIENT_ID=your_twitch_client_id_here
+    TWITCH_APP_ACCESS_TOKEN=your_twitch_app_access_token_here
+
+⚙️ Running the Bot
+
+To run the bot, use the following command:
+
+python bot.py
+
+🚀 Usage
+
+    Use the Slash Command /tw <username> to check if a Twitch username is available.
+    You can also use the Prefix Command !tw <username> to check availability.
+
+📋 Requirements
+
+    Python 3.x
+    discord.py library
+    requests library
+
+These dependencies can be installed by running:
+
+pip install -r requirements.txt
+
+📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
