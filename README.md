@@ -9,7 +9,7 @@ Features
 Setup
 1. Clone the Repository
 
-git clone <repo_url>
+git clone [<repo_url>](https://github.com/Cxsred/Twitch-Username-Checker/tree/main)
 
 2. Install Dependencies
 
