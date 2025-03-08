@@ -1,42 +1,80 @@
-Twitch Username Checker Bot
+# Twitch Username Checker Bot
 
-This is a Discord bot that checks if a Twitch username is available using the Twitch API. You can use the bot with a prefix command (!tw <username>) to check whether a username is available or already taken.
-Features
+Welcome to the **Twitch Username Checker Bot** repository! 🎮
 
-    Check if a Twitch username is available
-    Responds with whether the username is available or taken
+This bot allows you to check the availability of Twitch usernames directly through Discord.
 
-Setup
-1. Clone the Repository
+---
 
-git clone https://github.com/Cxsred/Twitch-Username-Checker/tree/main
+## How to Clone the Repo and Run the Bot 💻
 
-2. Install Dependencies
+1. **Clone the repository** using the following command:
 
-Make sure you have Python installed. Then, install the required dependencies by running:
+    ```bash
+    git clone https://github.com/Cxsred/Twitch-Username-Checker.git
+    ```
 
-pip install -r requirements.txt
+   🔗 **Click here to copy the command**: [Copy Git Clone Command](https://github.com/Cxsred/Twitch-Username-Checker.git)
 
-3. Create a .env File
+2. **Navigate to the project directory**:
 
-Create a .env file in the root directory and add your secret keys:
+    ```bash
+    cd Twitch-Username-Checker
+    ```
 
+3. **Create a `.env` file** and add the following environment variables:
+
+    ```plaintext
+    DISCORD_BOT_TOKEN=your_discord_bot_token
+    TWITCH_CLIENT_ID=your_twitch_client_id
+    TWITCH_APP_ACCESS_TOKEN=your_twitch_app_access_token
+    ```
+
+---
+
+## Setup Instructions 🛠️
+
+Create a `.env` file in the root directory and add the following keys:
+
+<pre>
 DISCORD_BOT_TOKEN=your_discord_bot_token
 TWITCH_CLIENT_ID=your_twitch_client_id
 TWITCH_APP_ACCESS_TOKEN=your_twitch_app_access_token
+</pre>
 
-Replace your_discord_bot_token, your_twitch_client_id, and your_twitch_app_access_token with your own secret keys.
-4. Run the Bot
+💡 **Tip:** To copy the content, highlight it and press `Ctrl+C` (Windows) or `Cmd+C` (Mac).
 
-After setting up the .env file and installing dependencies, run the bot with:
+---
 
-python bot.py
+## How to Run 📌
 
-The bot will be active and you can start checking Twitch usernames using the prefix command!
-Commands
+1. Install the required dependencies by running:
 
-    !tw <username> – Checks if the given Twitch username is available.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-License
+2. Run the bot with the following command:
 
-This project is licensed under the MIT License.
+    ```bash
+    python bot.py
+    ```
+
+---
+
+## Features 🎯
+
+- Check the availability of Twitch usernames.
+- Works with simple prefix commands (no need for slash commands).
+  
+---
+
+## Contributing 🤝
+
+Feel free to open issues and submit pull requests!
+
+---
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
